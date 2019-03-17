@@ -429,6 +429,7 @@ function pluginStatuses(state = {}, action) {
                 is_prepackaged: (nextState[id] && nextState[id].is_prepackaged) || Plugins.PREPACKAGED_PLUGINS.includes(id),
                 active: pluginState > 0,
                 state: pluginState,
+                error: plugin.error,
                 instances,
             };
         }
