@@ -2547,6 +2547,13 @@ export default class Client4 {
         );
     };
 
+    restartPlugin = async (pluginId) => {
+        return this.doFetch(
+            `${this.getPluginRoute(pluginId)}/restart`,
+            {method: 'post'}
+        );
+    };
+
     // Groups
 
     linkGroupSyncable = async (groupID, syncableID, syncableType, patch) => {

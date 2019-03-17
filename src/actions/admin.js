@@ -549,3 +549,27 @@ export function disablePlugin(pluginId: string): ActionFunc {
         return {data: true};
     };
 }
+
+export function restartPlugin(pluginId: string): ActionFunc {
+    return async (dispatch, getState) => {
+        dispatch({type: AdminTypes.RESTART_PLUGIN_REQUEST, data: pluginId});
+
+        try {
+            await Client4.restartPlugin(pluginId);
+        } catch (error) {
+            forceLogoutIfNecessary(error, dispatch, getState);
+            dispatch(batchActions([
+                {type: AdminTypes.RESTART_PLUGIN_FAILURE, error, data: pluginId},
+                logError(error),
+            ]));
+            return {error};
+        }
+
+        dispatch(batchActions([
+            {type: AdminTypes.RESTART_PLUGIN_SUCCESS, data: null},
+            {type: AdminTypes.RESTARTED_PLUGIN, data: pluginId},
+        ]));
+
+        return {data: true};
+    };
+}

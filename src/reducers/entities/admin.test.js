@@ -32,6 +32,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 0',
                         description: 'The plugin 0.',
                         is_prepackaged: false,
+                        error: null,
                     },
                     {
                         plugin_id: 'plugin_1',
@@ -41,6 +42,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 1',
                         description: 'The plugin.',
                         is_prepackaged: false,
+                        error: null,
                     },
                     {
                         plugin_id: 'plugin_1',
@@ -50,6 +52,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 1',
                         description: 'The plugin, different description.',
                         is_prepackaged: false,
+                        error: null,
                     },
                 ],
             };
@@ -62,6 +65,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin 0.',
                     is_prepackaged: false,
                     active: false,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',
@@ -78,6 +82,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin.',
                     is_prepackaged: false,
                     active: true,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',
@@ -107,6 +112,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin 0 - old.',
                     is_prepackaged: true,
                     active: false,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',
@@ -123,6 +129,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin.',
                     is_prepackaged: false,
                     active: false,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',
@@ -143,6 +150,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 0',
                         description: 'The plugin 0.',
                         is_prepackaged: false,
+                        error: null,
                     },
                     {
                         plugin_id: 'plugin_1',
@@ -152,6 +160,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 1',
                         description: 'The plugin.',
                         is_prepackaged: false,
+                        error: null,
                     },
                     {
                         plugin_id: 'plugin_1',
@@ -161,6 +170,7 @@ describe('reducers.entities.admin', () => {
                         name: 'Plugin 1',
                         description: 'The plugin, different description.',
                         is_prepackaged: false,
+                        error: null,
                     },
                 ],
             };
@@ -173,6 +183,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin 0.',
                     is_prepackaged: false,
                     active: false,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',
@@ -189,6 +200,7 @@ describe('reducers.entities.admin', () => {
                     description: 'The plugin.',
                     is_prepackaged: false,
                     active: true,
+                    error: null,
                     instances: [
                         {
                             cluster_id: 'cluster_id_1',

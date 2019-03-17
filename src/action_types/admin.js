@@ -157,6 +157,10 @@ export default keyMirror({
     DISABLE_PLUGIN_SUCCESS: null,
     DISABLE_PLUGIN_FAILURE: null,
 
+    RESTART_PLUGIN_REQUEST: null,
+    RESTART_PLUGIN_SUCCESS: null,
+    RESTART_PLUGIN_FAILURE: null,
+
     RECEIVED_LOGS: null,
     RECEIVED_AUDITS: null,
     RECEIVED_CONFIG: null,
@@ -178,4 +182,5 @@ export default keyMirror({
     REMOVED_PLUGIN: null,
     ENABLED_PLUGIN: null,
     DISABLED_PLUGIN: null,
+    RESTARTED_PLUGIN: null,
 });
